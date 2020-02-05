@@ -528,7 +528,7 @@ if(USE_FBGEMM)
       "FBGEMM is currently not supported on windows with MSVC. "
       "Not compiling with FBGEMM. "
       "Turn this warning off by USE_FBGEMM=OFF.")
-    set(USE_FBGEMM OFF)
+    set(USE_FBGEMM ON)
   endif()
   if(USE_FBGEMM AND NOT TARGET fbgemm)
     set(FBGEMM_BUILD_TESTS OFF CACHE BOOL "")
